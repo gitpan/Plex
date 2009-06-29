@@ -1,0 +1,6 @@
+INSTALL
+---
+No install script yet. Just run plex to daemonize.
+
+Run:
+plex --port=80 --root=/var/www/ --user_dir --vhosts [--dev]
