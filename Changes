@@ -1,0 +1,6 @@
+Revision history for Perl extension Plex-2.8.
+
+0.01  Sun Jul  5 15:33:40 2009
+	- original version; created by h2xs 1.23 with options
+		-cfn Plex-2.8
+
