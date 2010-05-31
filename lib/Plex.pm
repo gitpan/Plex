@@ -1,11 +1,10 @@
-package Plex-2.8;
+package Plex;
 
-use 5.008008;
+use 5.012000;
 use strict;
 use warnings;
 
 require Exporter;
-use AutoLoader qw(AUTOLOAD);
 
 our @ISA = qw(Exporter);
 
@@ -13,7 +12,7 @@ our @ISA = qw(Exporter);
 # names by default without a very good reason. Use EXPORT_OK instead.
 # Do not simply export all your public functions/methods/constants.
 
-# This allows declaration	use Plex-2.8 ':all';
+# This allows declaration	use Plex ':all';
 # If you do not need this, moving things directly into @EXPORT or @EXPORT_OK
 # will save memory.
 our %EXPORT_TAGS = ( 'all' => [ qw(
@@ -26,14 +25,12 @@ our @EXPORT = qw(
 	
 );
 
-our $VERSION = '0.01';
+our $VERSION = '2.0';
 
 require XSLoader;
-XSLoader::load('Plex-2.8', $VERSION);
+XSLoader::load('Plex', $VERSION);
 
 # Preloaded methods go here.
-
-# Autoload methods go after =cut, and are processed by the autosplit program.
 
 1;
 __END__
@@ -41,16 +38,16 @@ __END__
 
 =head1 NAME
 
-Plex-2.8 - Perl extension for blah blah blah
+Plex - Perl extension for blah blah blah
 
 =head1 SYNOPSIS
 
-  use Plex-2.8;
+  use Plex;
   blah blah blah
 
 =head1 DESCRIPTION
 
-Stub documentation for Plex-2.8, created by h2xs. It looks like the
+Stub documentation for Plex, created by h2xs. It looks like the
 author of the extension was negligent enough to leave the stub
 unedited.
 
@@ -75,14 +72,14 @@ If you have a web site set up for your module, mention it here.
 
 =head1 AUTHOR
 
-A. U. Thor, E<lt>scio@E<gt>
+Daniel Zulla, E<lt>scix@scix.deE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2009 by A. U. Thor
+Copyright (C) 2010 by Daniel Zulla
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.8 or,
+it under the same terms as Perl itself, either Perl version 5.12.0 or,
 at your option, any later version of Perl 5 you may have available.
 
 
